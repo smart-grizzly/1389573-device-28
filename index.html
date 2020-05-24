@@ -9,9 +9,11 @@
 <body>
   <header>
     <nav>
-      <a href="#"><img src="img/logo.svg" alt="Логотип интернет-магазина гаджетов «Девайс»"
-          width="163" height="35"></a>
-      <!--Здесь будет форма-->
+      <a href="#"><img src="img/logo.svg" alt="Логотип интернет-магазина гаджетов «Девайс»" width="163" height="35"></a>
+      <form action="https://echo.htmlacademy.ru/" method="GET">
+        <label class="visually-hidden" for="header-search">Поиск по сайту</label>
+        <input type="search" id="header-search" name="search" placeholder="Поиск по сайту">
+      </form>
       <ul>
         <li><a href="#">Войти</a></li>
         <li><a href="#">Сравнить</a></li>
@@ -111,51 +113,52 @@
       <ul>
         <li>
           <div>
-            <img src="img/popular-1.svg" alt="Виртуальная реальность" width="97" height="55">
+            <img src="img/popular-1.svg" alt="Девайс категории «Виртуальная реальность»" width="97" height="55">
           </div>
           <h3><a href="#">Виртуальная реальность</a></h3>
         </li>
         <li>
           <div>
-            <img src="img/popular-2.svg" alt="Моноподы для селфи" width="86" height="117">
+            <img src="img/popular-2.svg" alt="Девайс категории «Моноподы для селфи»" width="86" height="117">
           </div>
           <h3><a href="сatalog.html">Моноподы для селфи</a></h3>
         </li>
         <li>
           <div>
-            <img src="img/popular-3.svg" alt="Экшн-камеры" width="71" height="87">
+            <img src="img/popular-3.svg" alt="Девайс категории «Экшн-камеры»" width="71" height="87">
           </div>
           <h3><a href="#">Экшн-камеры</a></h3>
         </li>
         <li>
           <div>
-            <img src="img/popular-4.svg" alt="Фитнес-браслеты" width="107" height="65">
+            <img src="img/popular-4.svg" alt="Девайс категории «Фитнес-браслеты»" width="107" height="65">
           </div>
           <h3><a href="#">Фитнес-браслеты</a></h3>
         </li>
         <li>
           <div>
-            <img src="img/popular-5.svg" alt="Умные часы" width="56" height="98">
+            <img src="img/popular-5.svg" alt="Девайс категории «Умные часы»" width="56" height="98">
           </div>
           <h3><a href="#">Умные часы</a></h3>
         </li>
         <li>
           <div>
-            <img src="img/popular-6.svg" alt="Квадрокоптеры" width="132" height="69">
+            <img src="img/popular-6.svg" alt="Девайс категории «Квадрокоптеры»" width="132" height="69">
           </div>
           <h3><a href="#">Квадрокоптеры</a></h3>
         </li>
       </ul>
     </section>
     <section>
-      <h2>Услуги</h2>
+      <h2 class="visually-hidden">Услуги</h2>
       <div>
-        Доставка
-        Гарантия
-        Кредит
-      </div>
-      <!--Управление слайдером-->
-      <div>
+        <!--Слайдер-->
+        <div>
+          Доставка
+          Гарантия
+          Кредит
+        </div>
+        <!--Управление слайдером-->
         <div>
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
@@ -177,7 +180,7 @@
       </div>
     </section>
     <section>
-      <h2>Логотипы продукции</h2>
+      <h2 class="visually-hidden">Логотипы продукции</h2>
       <ul>
         <li><img src="img/logo-1.png" alt="Логотип DJI" width="260" height="100"></li>
         <li><img src="img/logo-2.png" alt="Логотип SP Gadgets" width="260" height="100"></li>
@@ -207,13 +210,12 @@
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
         бывает.</p>
-      <button type="button"><img src="img/map-1.png" alt="Карта" width="560" height="222"></button>
+      <button type="button"><img src="img/map-1.png" alt="Расположение на карте" width="560" height="222"></button>
       <button type="button">Напишите нам</button>
     </section>
   </main>
   <footer>
-    <a href="#"><img src="img/footer-logo.svg" alt="Логотип интернет-магазина «Девайс»" width="163"
-        height="35"></a>
+    <a href="#"><img src="img/footer-logo.svg" alt="Логотип интернет-магазина «Девайс»" width="163" height="35"></a>
     <ul>
       <li><a href="#">Войти</a></li>
       <li><a href="#">Сравнить</a></li>
@@ -225,15 +227,35 @@
       <li><a href="#">Гарантия</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
-    <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</p>
-    <ul>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">Twitter</a></li>
-    </ul>
-    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg"
-        alt="Логотип HTML академии" width="27" height="34"></a>
+    <a href="tel:+74954959595" aria-label="Контактный телефон интернет-магазина «Девайс»">Тел.: +7 (495) 495-95-95</a>
+      <ul>
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+      </ul>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"
+        aria-label="Онлайн‑курс «HTML и CSS. Профессиональная вёрстка сайтов» HTML академии"><img
+          src="img/logo-html.svg" alt="Логотип HTML академии" width="27" height="34"></a>
   </footer>
+  <section>
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru/" method="POST">
+      <p>
+        <label for="message-user-name">Ваше имя:</label>
+        <input type="text" name="user-name" id="message-user-name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="message-user-email">Ваш e-mail:</label>
+        <input type="email" name="user-email" id="message-user-email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="message-text">Текст письма:</label>
+        <textarea name="text" id="message-text" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
 </body>
 
 </html>
